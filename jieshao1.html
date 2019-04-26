@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="animate.min.css">
+     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+        <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://lib.webfont.com/fastjs.min.js"></script>
+<script type="text/javascript">
+$webfont.load("body", "14a785183c0846c8b9fb42339b741e64", "jmmeigongaixinzixing");
+/*$webfont.load("#id1,.class1,h1", "14a785183c0846c8b9fb42339b741e64", "jmmeigongaixinzixing");*/
+$webfont.draw();
+</script>
+    <style>
+        *{ margin: 0;padding: 0;}
+        a{text-decoration: none;color: #ededed;}
+        #content{position:relative;width: 1920px;height:600px;}
+        .lunbo{width: 192px;height:60px;background: url(img/jieshao/2.jpeg);float: left;background-size: 1920px 600px;position:absolute;top:350px;left:0;margin:0px auto;}
+    .jieshao{height:920px;width:1140px;margin:0 auto;margin-top:50px;}
+    .jieshao .basis{height:350px;width: 100%;font-size:20px;}
+    .jiang{-webkit-animation-delay:4s;-moz-animation-delay:4s;-o-animation-delay:4s;-ms-animation-delay:4s;}
+     .jieshao .TVshow{height:350px;width: 100%;margin-top:190px;}
+       .fang{
+            width: 200px;
+            height: 200px;
+            /*border: 1px solid red;*/
+            margin: 75px;
+            perspective:30000px;
+            display:inline-block;
+             
+        }
+        .fang .unit{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            perspective:30000px;
+            /*当一个舞台自己整体需要带着里面的演员旋转的时候，要保留3D：*/
+            transform-style:preserve-3d;
+            -webkit-transition:all 30s linear 0s;
+            -o-transition:all 30s linear 0s;
+            -ms-transition:all 30s linear 0s;
+            -moz-transition:all 30s linear 0s;
+        }
+        .fang .unit img{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .fang .unit img:nth-child(1){-webkit-transform:translateZ(100px);z-index: 2; -o-transform:translateZ(100px);-ms-transform:translateZ(100px);-moz-transform:translateZ(100px);}
+        .fang .unit img:nth-child(2){-webkit-transform:rotateX(90deg) translateZ(100px);-o-transform:rotateX(90deg) translateZ(100px);-ms-transform:rotateX(90deg) translateZ(100px);-moz-transform:rotateX(90deg) translateZ(100px);}
+        .fang .unit img:nth-child(3){-webkit-transform:rotateX(180deg) translateZ(100px);-o-transform:rotateX(180deg) translateZ(100px);-ms-transform:rotateX(180deg) translateZ(100px);-moz-transform:rotateX(180deg) translateZ(100px);}
+        .fang .unit img:nth-child(4){-webkit-transform:rotateX(-90deg) translateZ(100px);-o-transform:rotateX(-90deg) translateZ(100px);-ms-transform:rotateX(-90deg) translateZ(100px);-moz-transform:rotateX(-90deg) translateZ(100px);}
+        .fang .unit img:nth-child(5){-webkit-transform:rotateY(90deg) translateZ(100px);-o-transform:rotateY(90deg) translateZ(100px);-ms-transform:rotateY(90deg) translateZ(100px);-moz-transform:rotateY(90deg) translateZ(100px);}
+        .fang .unit img:nth-child(6){-webkit-transform:rotateY(-90deg) translateZ(100px);-o-transform:rotateY(-90deg) translateZ(100px);-ms-transform:rotateY(-90deg) translateZ(100px);-moz-transform:rotateY(-90deg) translateZ(100px);}
+        .fang:hover .unit{
+            -webkit-transform:rotateX(3600deg) rotate(3600deg);-o-transform:rotateX(3600deg) rotate(3600deg);-ms-transform:rotateX(3600deg) rotate(3600deg);-moz-transform:rotateX(3600deg) rotate(3600deg);
+        }
+        .fang p{
+            margin-left:40px;
+            margin-top:10px;
+        }
+        .imageplay{
+          height:800px;
+          width:1920px;
+          position: relative;
+          margin: 0px auto;
+        }
+        .imageplay h1{
+          position:absolute;
+          top:170px;
+          left:100px;
+
+        }
+        .imageplay .tupian{
+          margin: 0 auto;
+        }
+        .imageplay .tutu{
+          position: absolute;
+          height:700px;
+            width:100%;
+            top:300px;
+            left:30px;
+            margin:0px auto;
+            /*left:100px;*/
+        }
+        .imageplay .tutu img{
+          height: 300px;
+          width: 400px;
+          padding-left:40px;
+          padding-top:40px;
+          -webkit-transition: all 1s ease 0s;
+          -o-transition: all 1s ease 0s;
+          -ms-transition: all 1s ease 0s;
+          -moz-transition: all 1s ease 0s;
+        }
+        .imageplay .tutu img:nth-child(1):hover{
+           -webkit-transform:rotateX(360deg);
+           -o-transform:rotateX(360deg);
+           -ms-transform:rotateX(360deg);
+           -moz-transform:rotateX(360deg);
+        }
+        .imageplay .tutu img:nth-child(2):hover{
+           -webkit-transform:rotateY(360deg);
+           -o-transform:rotateY(360deg);
+           -ms-transform:rotateY(360deg);
+           -moz-transform:rotateY(360deg);
+        }
+        .imageplay .tutu img:nth-child(3):hover{
+           -webkit-transform:rotateZ(360deg);
+           -o-transform:rotateZ(360deg);
+           -ms-transform:rotateZ(360deg);
+           -moz-transform:rotateZ(360deg);
+        }
+        .imageplay .tutu img:nth-child(4):hover{
+           -webkit-transform:rotateX(360deg);
+           -o-transform:rotateX(360deg);
+           -ms-transform:rotateX(360deg);
+           -moz-transform:rotateX(360deg);
+        }
+         .imageplay .tutu img:nth-child(5):hover{
+           -webkit-transform:rotateX(360deg);
+           -o-transform:rotateX(360deg);
+           -ms-transform:rotateX(360deg);
+           -moz-transform:rotateX(360deg);
+        }
+        .imageplay .tutu img:nth-child(6):hover{
+           -webkit-transform:rotateY(360deg);
+           -o-transform:rotateY(360deg);
+           -ms-transform:rotateY(360deg);
+           -moz-transform:rotateY(360deg);
+        }
+        .imageplay .tutu img:nth-child(7):hover{
+           -webkit-transform:rotateZ(360deg);
+           -o-transform:rotateZ(360deg);
+           -ms-transform:rotateZ(360deg);
+           -moz-transform:rotateZ(360deg);
+        }
+        .imageplay .tutu img:nth-child(8):hover{
+           -webkit-transform:rotateX(360deg);
+           -o-transform:rotateX(360deg);
+           -ms-transform:rotateX(360deg);
+           -moz-transform:rotateX(360deg);
+        }
+         .imageplay .tutu img:nth-child(9):hover{
+           -webkit-transform:rotateX(360deg);
+           -o-transform:rotateX(360deg);
+           -ms-transform:rotateX(360deg);
+           -moz-transform:rotateX(360deg);
+        }
+        .imageplay .tutu img:nth-child(10):hover{
+           -webkit-transform:rotateY(360deg);
+           -o-transform:rotateY(360deg);
+           -ms-transform:rotateY(360deg);
+           -moz-transform:rotateY(360deg);
+        }
+        .imageplay .tutu img:nth-child(11):hover{
+           -webkit-transform:rotateZ(360deg);
+           -o-transform:rotateZ(360deg);
+           -ms-transform:rotateZ(360deg);
+           -moz-transform:rotateZ(360deg);
+        }
+        .imageplay .tutu img:nth-child(12):hover{
+           -webkit-transform:rotateX(360deg);
+           -o-transform:rotateX(360deg);
+           -ms-transform:rotateX(360deg);
+           -moz-transform:rotateX(360deg);
+        }
+         .imageplay .tutu img:nth-child(13):hover{
+           -webkit-transform:rotateX(360deg);
+           -o-transform:rotateX(360deg);
+           -ms-transform:rotateX(360deg);
+           -moz-transform:rotateX(360deg);
+        }
+        .imageplay .tutu img:nth-child(14):hover{
+           -webkit-transform:rotateY(360deg);
+           -o-transform:rotateY(360deg);
+           -ms-transform:rotateY(360deg);
+           -moz-transform:rotateY(360deg);
+        }
+        .imageplay .tutu img:nth-child(15):hover{
+           -webkit-transform:rotateZ(360deg);
+           -o-transform:rotateZ(360deg);
+           -ms-transform:rotateZ(360deg);
+           -moz-transform:rotateZ(360deg);
+        }
+        .imageplay .tutu img:nth-child(16):hover{
+           -webkit-transform:rotateX(360deg);
+           -o-transform:rotateX(360deg);
+           -ms-transform:rotateX(360deg);
+           -moz-transform:rotateX(360deg);
+        }
+        #bottom{
+       width: 100%;
+       height: 132px;
+       margin-top:600px; 
+      background-color:black; 
+}
+  #bottom .content{
+      width: 500px;
+      height: 50px;
+      margin:0px auto;
+      color:white;
+      /* border: 1px solid white; */
+      position: relative;
+      bottom: 0px;
+  }
+  #bottom .content a:nth-child(1)::after,#bottom .content a:nth-child(2)::after,#bottom .content a:nth-child(3)::after{
+      content: "-";
+     margin-left: 8px;
+  }
+  #bottom .content a:nth-child(2),#bottom .content a:nth-child(3),#bottom .content a:nth-child(4){
+      margin-left: 2px;
+  }
+  #bottom .content p{
+      margin-top: 20px;
+      margin-left: 50px;
+  }
+         
+    </style>
+</head>
+<body>
+  <!-- suipianlunbotu -->
+  <p id="content"></p>
+  <div class="jieshao">
+   <!-- 基本介绍1 -->
+  <div class="basis">
+      <h1 class="jiang animated slideInRight">僵小鱼</h1><br><br><br>
+      <p class="animated slideInUp" style="animation-delay:4.7s;">僵小鱼是厦门风鱼动漫有限公司出品的中国风小僵尸。</p><br>
+      <p class="animated slideInUp" style="animation-delay:5.6s;">它头顶鱼骨、身披官服、眼圈黝黑、一脸萌相。</p><br><br>
+      <p class="animated slideInUp" style="animation-delay:6.5s;">出生于大自然，懵懂呆萌，有时胆小害羞。开朗乐观，好奇心旺盛，智商不低，只是欠缺一般人该有的常识，但是会用自己的角度思考。善良有同情心，会缓和周围的气氛积极看待事物，也常对周围的人带来正面影响。长期的孤独生活变得比常人更珍惜与他人之间的情谊，冥冥中所注定的因缘，令他牵动了所有人 [1]  。</p><br><br>
+      <p class="animated slideInUp"  style="animation-delay:7.5s;">《叫我僵小鱼》讲述了小鱼被鱼爹收留后，两人之间暖萌治愈、笑中带泪的日常故事。第一季已于2017年底完结（第一季71集），《僵小鱼第二季》在2018年初和大家见面，更多新角色的加入带给了姜丝们更多丰富的情节和惊喜感受 [2]  </p>
+  </div>
+ <!-- 电视电影 -->
+   <div class="TVshow">
+    <h1>电视电影</h1>
+         <div class="fang">
+        <p class="unit">
+            <img src="img/jieshao/4.22/1.png" alt="">
+            <img src="img/jieshao/4.22/2.png" alt="">
+            <img src="img/jieshao/4.22/3.png" alt="">
+            <img src="img/jieshao/4.22/4.png" alt="">
+            <img src="img/jieshao/4.22/5.png" alt="">
+            <img src="img/jieshao/4.22/6.png" alt="">
+        </p>
+         <p style=" margin-left:80px;
+            margin-top:20px;">《僵小鱼一号》</p><br>
+         <p style=" margin-left:80px;
+            margin-top:10px;">精力旺盛，快乐洋溢</p>
+    </div>
+      <div class="fang">
+        <p class="unit">
+            <img src="img/jieshao/4.22/3.png" alt="">
+            <img src="img/jieshao/4.22/2.png" alt="">
+            <img src="img/jieshao/4.22/1.png" alt="">
+            <img src="img/jieshao/4.22/4.png" alt="">
+            <img src="img/jieshao/4.22/5.png" alt="">
+            <img src="img/jieshao/4.22/6.png" alt="">
+        </p>
+         <p style="  margin-left:80px;
+            margin-top:20px;">《僵小鱼二号》</p><br>
+         <p style=" margin-left:80px;
+            margin-top:10px;">开展一系列冒险活动</p>
+    </div>
+     <div class="fang">
+        <p class="unit">
+            <img src="img/jieshao/4.22/4.png" alt="">
+            <img src="img/jieshao/4.22/1.png" alt="">
+            <img src="img/jieshao/4.22/3.png" alt="">
+            <img src="img/jieshao/4.22/4.png" alt="">
+            <img src="img/jieshao/4.22/5.png" alt="">
+            <img src="img/jieshao/4.22/6.png" alt="">
+        </p>
+         <p style=" margin-left:80px;
+            margin-top:20px;">《僵小鱼三号》</p><br>
+         <p style=" margin-left:80px;
+            margin-top:10px;">可爱活波，聪明伶俐</p>
+    </div>
+   </div>
+</div>
+</div>
+ <!-- 过渡条 -->
+  <div class="imageplay">
+     <div class="sky">
+    <div class="clouds_one"></div>
+    <div class="clouds_two"></div>
+    <div class="clouds_three"></div>
+  </div>
+   <h1>图片展示</h1>
+   <div class="tupian">
+     <div class="tutu">
+       <img src="images/tutu/1.png" alt="">
+       <img src="images/tutu/2.png" alt="">
+       <img src="images/tutu/2.png" alt="">
+       <img src="images/tutu/3.png" alt=""><br>
+       <img src="images/tutu/4.png" alt="">
+       <img src="images/tutu/2.png" alt="">
+       <img src="images/tutu/5.png" alt="">
+       <img src="images/tutu/6.png" alt=""><br>
+       <img src="images/tutu/7.png" alt="">
+       <img src="images/tutu/8.png" alt="">
+       <img src="images/tutu/2.png" alt="">
+
+       <img src="images/tutu/9.png" alt="">
+     </div>
+ </div>
+  </div>
+  <!-- dibu -->
+  <div id="bottom">
+    <div class="content">
+      <a href="">关于僵小鱼</a>
+      <a href="">僵小鱼服务</a>
+      <a href="">僵小鱼条款</a>
+      <a href="">僵小鱼网站导航</a>
+      <span style="margin-left:50px" >僵小鱼公司版权所有@1997-2016</span>
+      <p>北京市房山区窦店镇北网有限公司：浙网文[2016]0155-055号意见反馈</p>
+    </div>
+  </div>
+    <script>
+        var str="";
+          for(var i=0;i<100;i++){
+            str+="<div class='lunbo'></div>";
+          }
+          $("#content").html(str);
+    $(".lunbo").each(function(index){
+            $(this).css({"backgroundPosition":-index%10*192+"px "+(- parseInt(index/10)*60)+"px"})
+            .delay(index*10)
+            .animate({
+                "left":index%10*192,
+                "top":parseInt(index/10)*60
+            },3000)
+        })
+        </script>
+</body> 
+</html>

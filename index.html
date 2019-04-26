@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>僵小鱼吧</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <!-- tab切换 -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+<script type="text/javascript">
+    !function(e){pageConfig.wideVersion=function(){var n=e,i=document,o=i.documentElement,t=i.getElementsByTagName("body")[0],a=n.innerWidth||o.clientWidth||t.clientWidth;return a>=1190&&pageConfig.compatible}();var n=[];pageConfig.wideVersion?(n.push("root61"),n.push("o2_wide")):n.push("o2_mini");var i=document.getElementsByTagName("html")[0];i.className=n.join(" ")}(window,void 0);
+  </script>
+  <script type="text/javascript">
+  window['_REPORT_'] = {};
+  window['_REPORT_']['START'] = new Date();
+  </script>
+
+  <script type="text/javascript">
+    window.search = function (a){var b,c="//search.jd.com/Search?keyword={keyword}&enc={enc}{additional}";var d=search.additinal||"";var e=document.getElementById(a);var f=e.value;if(f=f.replace(/^\s*(.*?)\s*$/,"$1"),f.length>100&&(f=f.substring(0,100)),""==f)return void(window.location.href=window.location.href);var g=0;"undefined"!=typeof window.pageConfig&&"undefined"!=typeof window.pageConfig.searchType&&(g=window.pageConfig.searchType);var h="&cid{level}={cid}";var i="string"==typeof search.cid?search.cid:"";var j="string"==typeof search.cLevel?search.cLevel:"";var k="string"==typeof search.ev_val?search.ev_val:"";switch(g){case 0:break;case 1:j="-1",d+="&book=y";break;case 2:j="-1",d+="&mvd=music";break;case 3:j="-1",d+="&mvd=movie";break;case 4:j="-1",d+="&mvd=education";break;case 5:var l="&other_filters=%3Bcid1%2CL{cid1}M{cid1}[cid2]";switch(j){case"51":h=l.replace(/\[cid2]/,""),h=h.replace(/\{cid1}/g,"5272");break;case"52":h=l.replace(/\{cid1}/g,"5272"),h=h.replace(/\[cid2]/,"%3Bcid2%2CL{cid}M{cid}");break;case"61":h=l.replace(/\[cid2]/,""),h=h.replace(/\{cid1}/g,"5273");break;case"62":h=l.replace(/\{cid1}/g,"5273"),h=h.replace(/\[cid2]/,"%3Bcid2%2CL{cid}M{cid}");break;case"71":h=l.replace(/\[cid2]/,""),h=h.replace(/\{cid1}/g,"5274");break;case"72":h=l.replace(/\{cid1}/g,"5274"),h=h.replace(/\[cid2]/,"%3Bcid2%2CL{cid}M{cid}");break;case"81":h=l.replace(/\[cid2]/,""),h=h.replace(/\{cid1}/g,"5275");break;case"82":h=l.replace(/\{cid1}/g,"5275"),h=h.replace(/\[cid2]/,"%3Bcid2%2CL{cid}M{cid}")}c="//search-e.jd.com/searchDigitalBook?ajaxSearch=0&enc=utf-8&key={keyword}&page=1{additional}";break;case 6:j="-1",c="//music.jd.com/8_0_desc_0_0_1_15.html?key={keyword}";break;case 7:c="//s-e.jd.com/Search?key={keyword}&enc=utf-8";break;case 8:c="//search.jd.hk/Search?keyword={keyword}&enc=utf-8";break;case 9:d+="&market=1"}if("string"==typeof i&&""!=i&&"string"==typeof j){var m=/^(?:[1-8])?([1-3])$/;j="-1"==j?"":m.test(j)?RegExp.$1:"";var n=h.replace(/\{level}/,j);n=n.replace(/\{cid}/g,i),d+=n}if("string"==typeof k&&""!=k&&(d+="&ev="+k),f=encodeURIComponent(f),b=c.replace(/\{keyword}/,f),b=b.replace(/\{enc}/,"utf-8"),b=b.replace(/\{additional}/,d),"object"==typeof $o&&("string"==typeof $o.lastKeyword&&(b+="&wq="+encodeURIComponent($o.lastKeyword)),"string"==typeof $o.pvid&&(b+="&pvid="+$o.pvid)),b.indexOf("/search.jd.com/")>0)try{JA.tracker.ngloader("search.000009",{key:f,posid:a,target:b})}catch(o){}("undefined"==typeof search.isSubmitted||0==search.isSubmitted)&&(setTimeout(function(){window.location.href=b},50),search.isSubmitted=!0)};
+  </script>
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-terminal"></i>僵小鱼的个人主页</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">基本介绍</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#works">电影电视</a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#about">专业技能</a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#team">工作经历</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#testimonials">自我评价</a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#contact">联系方式</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1>姓名<span class="brand-heading">僵小鱼</span></h1>
+                        <a href="jieshao1.html">piupiupiu</a>
+                        <p class="intro-text">喜欢搞怪，热爱生活</p>
+                        <a href="#services" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<div class="copyrights">Baron简历 <a href="http://blog.youzewang.com/jianli" >前端工程师</a></div>
+<!-- Services Section -->
+<div id="services" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>基本 <strong>资料</strong></h2>
+      <hr>
+      </div>
+    <div class="space"></div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-laptop"></i>
+        <h4><strong>个人信息</strong></h4>
+        <p>
+    英文名:  My Baby Zombie &nbsp;性别：男</br>
+    年龄: 3岁 籍贯：中国
+    </p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-code"></i>
+        <h4><strong>专业学历</strong></h4>
+        <p>
+    专业：吃喝玩乐</br>
+    学历：博士后吧</br>
+    
+    </p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-rocket"></i>
+        <h4><strong>毕业学校</strong></h4>
+        <p>
+      毕业学校：家里蹲大学</br>
+      学习技能：搞笑
+    </p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-bullseye"></i>
+        <h4><strong>联系方式</strong></h4>
+        <p>QQ：2410512612</br>
+      邮箱：2410512612@qq.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="works">
+  <div class="container"> <!-- Container -->
+    <div class="section-title text-center center">
+      <h2>电视 <strong>电影</strong></h2>
+      <hr>
+      <div class="clearfix"></div>
+      <p>僵小鱼出生于2014年初，于2014年10月首次在站酷网发表，一经推出便得到广大网友的喜爱。2016年正式推出以僵小鱼为主角的系列视频，短短一个月单平台累计粉丝超200万，破该平台单日增粉量记录。截止2017年12月的数据，僵小鱼已在全网圈粉2200万，播放量逾30亿。</p>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">所有</a></li>
+            <li><a href="#" data-filter=".web">电视</a></li>
+            <li><a href="#" data-filter=".app">电影</a></li>
+            <li><a href="#" data-filter=".branding">小说</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+    
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href='#' target='_blank' title="僵小鱼">僵小鱼</a></h4>
+                <small>搞笑剧情</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/1.png" class="img-responsive" style="height:300px;width:300px;"></div>
+          </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href="http://www.caishulicai.com" target='_blank' title="僵小鱼">僵小鱼</a></h4>
+                <small>可爱至极</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/2.png" class="img-responsive" style="height:300px;width:300px;"></div>
+          </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href="http://it.youzewang.com" target='_blank' title="僵小鱼">僵小鱼</a></h4>
+                <small>优秀至极</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/3.png" class="img-responsive"  style="height:300px;width:300px;"></div>
+          </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href='http://99jiyin.com/' target='_blank' title="僵小鱼">僵小鱼</h4>
+                <small>完美无瑕</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/4.png" class="img-responsive" style="height:300px;width:300px;"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href='http://www.silicongene.net' target='_blank' title="僵小鱼">僵小鱼</a></h4>
+                <small>风流倜傥</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/5.png" class="img-responsive"  style="height:300px;width:300px;">
+        </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 branding">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href="http://ued.hengtiansoft.com" target='_blank' title="僵小鱼">僵小鱼</a></h4>
+                <small>优秀至极</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/6.png" class="img-responsive" style="height:300px;width:300px;"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 branding app web">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <h4><a href="http://blog.youzewang.com" target='_blank' title="僵小鱼">僵小鱼</a></h4>
+                <small>完美无瑕</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/7.png" class="img-responsive"  style="height:300px;width:300px;"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web app">
+          <div class="portfolio-item">
+      
+            <div class="hover-bg"> 
+              <div class="hover-text">
+                <h4><a href='http://new.rzds.net/' target='_blank' title="僵小鱼">僵小鱼 </a></h4>
+                <small>可爱动人</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> 
+        </div>
+              <img src="img/portfolio/8.png" class="img-responsive" style="height:300px;width:300px;">
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2><strong>专业</strong> 技能</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-6"> <img src="img/about.png" class="img-responsive"> </div>
+      <div class="col-md-6">
+        <div class="about-text"> <i class="fa fa-users"></i>
+          <div class="padding-left"><h4>电视</h4>
+          <p>意外被神秘生物掳走的僵小鱼重新回到人类世界，却又将遭遇平生最大危机！一出火锅酿成惨剧，让不为人知的僵小鱼暴露在众目睽睽之下，等待他的是解剖手术刀还是人情温暖？神秘人物一一登场，高智能机器人、异国吸血小萝莉、帅气冷血的老板、反差萌女神……脱离了鱼爹的保护，暖萌小僵尸究竟何去何从？《叫我僵小鱼》第二季携全新演员阵容重磅归来，为你开启高智商、高情商的欢脱暖心之旅！</p></div>
+          <i class="fa fa-magic"></i>
+          <div class="padding-left"><h4>电影</h4>
+          <p>很治愈很暖心。人在孤独时，总希望出现一个事物来拯救自己，无意中看见这个动画的时候我的状态正是寂寞得一天到晚刷手机，于是我就想，作者一定是经历过孤独的，心中却有爱的人。一个人靠着爱来自救，远比恨美好。养宠物是僵小鱼在现实中的替代品吧，情人不一定善终，儿女又有期望与责任的枷锁。</p></div>
+          <i class="fa fa-check-square-o"></i>
+          <div class="padding-left"><h4>小说</h4>
+          <p>目前还在开发中，敬请期待吧</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="achivements" class="section dark-bg">
+      <div class="container"> 
+        <div class="row">
+          <div class="col-md-3 col-sm-3">
+            <div class="achivement-box">
+              <i class="fa fa-smile-o"></i>
+              <span class="count">25</span>
+              <h4>Age Years</h4>                            
+            </div>
+          </div> 
+          <div class="col-md-3 col-sm-3">
+            <div class="achivement-box">
+              <i class="fa fa-code"></i>
+              <span class="count">100000</span>
+              <h4>Code Amount</h4>                            
+            </div>
+          </div> 
+          <div class="col-md-3 col-sm-3">
+            <div class="achivement-box">
+              <i class="fa fa-check-square-o"></i>
+              <span class="count">4800</span>
+                            <h4>Work Hour</h4>
+            </div>
+          </div> 
+          <div class="col-md-3 col-sm-3">
+            <div class="achivement-box">
+              <i class="fa fa-trophy"></i>
+              <span class="count">20</span>
+              <h4>Projects Amount</h4>                            
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+<!-- Team Section -->
+<div id="team" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>人生 <strong>经历</strong></h2>
+      <hr>
+      <p>僵小鱼系列包括短视频、15秒微视频、壁纸、有声漫画、表情包等作品[1]。</p>
+    </div>
+    <div id="row">
+  
+  <div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/1.png" class="img-circle team-img">
+          <div class="caption">
+            <h3>《叫我僵小鱼》系列</h3>
+            <p>搞怪幽默</p>
+            <p>意外被神秘生物掳走的僵小鱼重新回到人类世界，却又将遭遇平生最大危机！</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/2.png" class="img-circle team-img">
+          <div class="caption">
+            <h3>《僵小鱼第二季》</h3>
+            <p>嗯哼嗯哼</p>
+            <p>神秘人物一一登场，高智能机器人、异国吸血小萝莉、帅气冷血的老板、反差萌女神……脱离了鱼爹的保护</p>
+          </div>
+        </div>
+      </div>
+    
+      
+    
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/3.png" class="img-circle team-img">
+          <div class="caption">
+            <h3>《僵小鱼第三季》</h3>
+            <p>搞笑幽默</p>
+            <p>、机器人咔叽蟆以及咔叽蟆的跟班使命哒主演，一起打闹、一起坑爹、其乐无穷，让你笑到不行！</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/4.png" class="img-circle team-img">
+          <div class="caption">
+            <h3>《僵小鱼第四季》</h3>
+            <p>搞笑幽默</p>
+            <p>全片由二维与三维联合打造而成，斥资千万元开创新时代CG动画。每集节目4分钟左右，情节跌宕起伏无节操</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Testimonials Section -->
+<div id="testimonials" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>自我 <strong>评价</strong></h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div id="testimonial" class="owl-carousel owl-theme">
+          <div class="item">       
+            <p>
+      热爱学习,良好的团队合作精神，能迅速融入新的团队。</br>易和人相处，拥有良好的亲和力。
+      </p>
+          </div>
+          <div class="item">
+            <p>
+      有强烈的责任感，工作踏实，性格开朗乐观，积极上进，吃苦耐劳。</br>能在较大的压力下保持良好的工作状态，善于自我调节。
+      </p>
+          </div>
+          <div class="item">
+            <p>
+      出身于大自然，懵懂呆萌，有时胆小害羞。开朗乐观，好奇心旺盛，智商不低，只是欠缺一般人该有的常识，但是会用自己的角度思考。
+      </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2><strong>联系</strong> 方式</h2>
+      <hr>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
+        <p>北京市房山区窦店镇窦大路中国信息大学</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+        <p>2410512612@qq.com</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+        <p>QQ:2410512612</p>
+      </div>
+      <hr>
+      <div class="clearfix"></div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <hr>
+      <h3>给我发邮件</h3>
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="姓名" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder="邮箱" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="内容" required></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-default">确认发送</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<nav id="footer">
+</nav>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jquery.counterup.js"></script> 
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<!-- Javascripts
+    ================================================== --> 
+<script type="text/javascript" src="js/main.js"></script>
+<!--[if lte IE 7]>
+    <script src="//misc.360buyimg.com/mtd/pc/index/home/ie6tip.min.js"></script>
+  <![endif]-->
+  <!--[if IE 8]>
+    <script src="//storage.360buyimg.com/fragments/polyfill.js"></script>
+  <![endif]-->
+</body>
+</html>
